@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary */
+    --BrighOrange: hsl(31, 77%, 52%);
+    --DarkCyan: hsl(184, 100%, 22%);
+    --VeryDarkCyan: hsl(179, 100%, 13%);
+
+    /* Neutral */
+    --TransparentWhiteParagraph: hsla(0, 0%, 100%, 0.75);
+    --VeryLightGrayBackgroundHeadingsButtons: hsl(0, 0%, 95%);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--VeryLightGrayBackgroundHeadingsButtons);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 50vw;
+}
+
+.column1,
+.column2,
+.column3 {
+    padding: 50px;
+}
+
+.content > h2 {
+    color: var(--VeryLightGrayBackgroundHeadingsButtons);
+    font-family: "Big Shoulders Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.content > p {
+    color: var(--TransparentWhiteParagraph);
+    margin-bottom: 50px;
+}
+
+.content > img {
+    margin-bottom: 30px;
+}
+
+.column1 {
+    background-color: var(--BrighOrange);
+    border-radius: 10px 0 0 10px;
+}
+
+.column2 {
+    background-color: var(--DarkCyan);
+}
+
+.column3 {
+    background-color: var(--VeryDarkCyan);
+    border-radius: 0 10px 10px 0;
+}
+
+button {
+    margin-top: 40px;
+}
+
+.button1 {
+    padding: 10px 20px;
+    border-radius: 100px;
+    border: none;
+    font-family: "Lexend Deca", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--BrighOrange);
+}
+
+.button1:hover,
+.button2:hover,
+.button3:hover {
+    border: 1px solid var(--TransparentWhiteParagraph);
+    background-color: transparent;
+    color: var(--TransparentWhiteParagraph);
+}
+
+.button2 {
+    padding: 10px 20px;
+    border-radius: 100px;
+    border: none;
+    font-family: "Lexend Deca", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--DarkCyan);
+}
+
+.button3 {
+    padding: 10px 20px;
+    border-radius: 100px;
+    border: none;
+    font-family: "Lexend Deca", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--VeryDarkCyan);
+}
